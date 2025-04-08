@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmarvel=self.webpackChunkmarvel||[]).push([[21],{21:(e,s,t)=>{t.r(s),t.d(s,{default:()=>a});var l=t(43),c=t(24),r=t(579);const a=e=>{let{charId:s}=e;const[t,a]=(0,l.useState)({}),{getAnimeById:u}=(0,c.A)();return(0,l.useEffect)((()=>{u(s)}),[]),console.log(t),(0,r.jsx)("div",{style:{color:"#BFBFBF"}})}}}]);
+//# sourceMappingURL=21.d946be45.chunk.js.map
