@@ -1,0 +1,43 @@
+
+.app {
+    &__header {
+        display: flex;
+        justify-content: space-around;
+        background: rgb(37, 37, 39);
+        height: 56px;
+        width: 100%;
+        align-items: center;
+
+        img {
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+    
+    &__menu {
+        ul {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            li {
+                transition: color 0.3s ease;
+                color: #bfbfbf;
+                margin: 0 8px;
+            }
+
+            li:hover {
+                color: #a855f7;
+            }
+        }
+    }
+
+    &__logo {
+        font-size: 42px;
+        color: #fff;
+        font-weight: 900; 
+        cursor: pointer; 
+    }
+}

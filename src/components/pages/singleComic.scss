@@ -1,0 +1,106 @@
+@import '../../style/variables.scss';
+
+.single-comic {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 430px auto;
+    column-gap: 50px;
+    align-items: start;
+    justify-content: center;
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(168, 85, 247, 0.5);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    &__img {
+        width: 293px;
+        height: 450px;
+        border-radius: 20px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        color: #bfbfbf;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 25px;
+        color:  #bfbfbf;
+    }
+    &__price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: $main-color;
+        margin-top: 25px;
+    }
+    &__back {
+        justify-self: end;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__info {
+        background-color: #1c1c1c;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #666;
+    }
+    &__item {
+        font-size: 18px;
+        color: #666;
+    }
+
+    &__item:hover {
+        color: #5a3bc1;
+    }
+}
+
+.character-card {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+.character-image {
+    border-radius: 12px;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.character-details {
+    flex: 1;
+}
+
+.character-name {
+    color: #a855f7;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.character-description {
+    color: #ccc;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #a855f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #d8b4fe;
+}

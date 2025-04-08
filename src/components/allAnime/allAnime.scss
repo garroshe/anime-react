@@ -1,0 +1,176 @@
+.all-anime {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__zhanr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    &__zhanr:hover {
+        background-color: #3a3a3a;
+    }
+
+    &__filter {
+        position: fixed;
+        top: 55px;
+        right: 180px;
+        width: 330px;
+        height: auto;
+        background: #1c1c1c;
+        padding: 10px;
+        border-radius: 10px;
+
+        &-select {
+            color: #BFBFBF;
+            font-size: 14px;
+        }
+
+        &-genre {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+
+            input {
+                width: 138px;
+                height: 25px;
+                padding: 2px 6px;
+                font-size: 13px;
+                border-radius: 5px;
+                border: 1px solid #3b3d45;
+                background: transparent;
+                color: #BFBFBF;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #BFBFBF;
+                font-size: 14px;
+                input {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        &-value {
+            display: flex;
+            align-items: center;
+            color: #EBEBF580;
+            font-size: 12px;
+        }
+
+        &-title {
+            color: #BFBFBF;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        &-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            input {
+                width: 138px;
+                height: 25px;
+                padding: 2px 6px;
+                font-size: 13px;
+                border-radius: 5px;
+                border: 1px solid #3b3d45;
+                background: transparent;
+                color: #BFBFBF;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #BFBFBF;
+                font-size: 14px;
+                input {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        &-btns {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        &-reset {
+            width: 125px;
+            height: 32px;
+            background: transparent;
+            border: 1px solid rgba(80, 80, 80, .5);
+            border-radius: 6px;
+            color: rgb(176, 179, 184);
+            text-align: center;
+            line-height: 30px;
+            transition: color .2s ease, border .2s ease, opacity .2s ease, transform .2s ease, filter .2s ease;
+            cursor: pointer;
+        }
+
+        &-save {
+            width: 125px;
+            height: 32px;
+            background: #a855f7;
+            border: 1px solid rgba(80, 80, 80, .5);
+            border-radius: 6px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+            transition: color .2s ease, border .2s ease, opacity .2s ease, transform .2s ease, filter .2s ease;
+            cursor: pointer;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 160px);
+        gap: 15px;
+
+        li {
+            cursor: pointer;
+            img {
+                width: 160px;
+                height: 225px;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 200px;
+        gap: 50px;
+    }
+
+    &__title {
+        color: #BFBFBF;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+
+    &__format {
+        color: #EBEBF580;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-top: 0px;
+    }
+}
