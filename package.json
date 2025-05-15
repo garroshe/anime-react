@@ -20,10 +20,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "cz"
   },
   "config": {
     "committizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
@@ -48,6 +52,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "postcss": "^8.5.3",
     "sass": "^1.77.2",
     "tailwindcss": "^4.0.17"
