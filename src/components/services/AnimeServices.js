@@ -8,7 +8,7 @@ const useAnimeServices = () => {
     //use
     const getCharacter =  async () => {
         const res = await request(`${_API_BASE}random/characters`);
-        return _transformData(res.data);
+        return _transformData(res.data)
     }
     //use
     const getTopCharacter = async (offset) => {
